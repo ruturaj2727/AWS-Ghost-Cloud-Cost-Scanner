@@ -1,0 +1,13 @@
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+.git
+.gitignore
+README.md
+LICENSE
+Makefile
+.DS_Store
+Thumbs.db
+vendor/
