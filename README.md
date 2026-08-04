@@ -66,17 +66,17 @@ AWS makes it very easy to create resources and very easy to forget them. `aws-nu
 
 ### Homebrew (macOS / Linux)
 ```bash
-brew install NotHarshhaa/tap/aws-ghost
+brew install ruturaj2727/tap/aws-ghost
 ```
 
 ### Go install
 ```bash
-go install github.com/NotHarshhaa/aws-ghost@latest
+go install github.com/ruturaj2727/aws-ghost@latest
 ```
 
 ### Binary
 ```bash
-curl -sSL https://github.com/NotHarshhaa/aws-ghost/releases/latest/download/aws-ghost_linux_amd64 \
+curl -sSL https://github.com/ruturaj2727/aws-ghost/releases/latest/download/aws-ghost_linux_amd64 \
   -o /usr/local/bin/aws-ghost && chmod +x /usr/local/bin/aws-ghost
 ```
 
@@ -86,7 +86,7 @@ docker run --rm \
   -e AWS_ACCESS_KEY_ID \
   -e AWS_SECRET_ACCESS_KEY \
   -e AWS_DEFAULT_REGION \
-  ghcr.io/NotHarshhaa/aws-ghost scan
+  ghcr.io/ruturaj2727/aws-ghost scan
 ```
 
 ---
@@ -335,7 +335,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install aws-ghost
-        run: go install github.com/NotHarshhaa/aws-ghost@latest
+        run: go install github.com/ruturaj2727/aws-ghost@latest
 
       - name: Scan for ghost resources
         env:
@@ -356,7 +356,7 @@ jobs:
 aws-ghost-scan:
   image: golang:1.21
   script:
-    - go install github.com/NotHarshhaa/aws-ghost@latest
+    - go install github.com/ruturaj2727/aws-ghost@latest
     - aws-ghost scan --all-regions --output markdown > ghost-report.md
   artifacts:
     paths:
@@ -542,7 +542,7 @@ fi
 ### Getting Help
 
 If you encounter issues not covered here:
-1. Check existing [GitHub Issues](https://github.com/NotHarshhaa/aws-ghost/issues)
+1. Check existing [GitHub Issues](https://github.com/ruturaj2727/aws-ghost/issues)
 2. Run with verbose output and include in bug report
 3. Verify AWS CLI works: `aws ec2 describe-regions`
 4. Check tool version: `aws-ghost version`
@@ -711,7 +711,7 @@ If you encounter issues not covered here:
 ## Contributing
 
 ```bash
-git clone https://github.com/NotHarshhaa/aws-ghost
+git clone https://github.com/ruturaj2727/aws-ghost
 cd aws-ghost
 go mod tidy
 go run . scan --region us-east-1
@@ -721,6 +721,3 @@ Issues and PRs are welcome. If you find a ghost resource type that's not covered
 
 ---
 
-## License
-
-MIT © [NotHarshhaa](https://github.com/NotHarshhaa)
