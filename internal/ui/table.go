@@ -117,7 +117,7 @@ func FormatResourceTable(resources []types.Resource) string {
 		}
 
 		row := fmt.Sprintf(
-			"  %s %-*s %-*s %-*s %s %-*s %d",
+			"  %s %-*s %-*s %-*s %s %-*d",
 			icon,
 			typeWidth-2, r.Type,
 			idWidth, truncateString(r.ID, idWidth),
