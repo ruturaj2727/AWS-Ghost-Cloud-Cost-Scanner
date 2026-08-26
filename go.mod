@@ -1,4 +1,4 @@
-module github.com/NotHarshhaa/aws-ghost
+module https://github.com/ruturaj2727/AWS-Ghost-Cloud-Cost-Scanner.git
 
 go 1.24.2
 
