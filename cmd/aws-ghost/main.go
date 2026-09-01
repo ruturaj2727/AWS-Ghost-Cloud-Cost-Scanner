@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/NotHarshhaa/aws-ghost/cmd/aws-ghost/cmd"
+	"https://github.com/ruturaj2727/AWS-Ghost-Cloud-Cost-Scanner/tree/main/cmd/aws-ghost/cmd"
 )
 
 func main() {
